@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5DBA6E72985AC5A000C891F /* TriallerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA6E62985AC5A000C891F /* TriallerApp.swift */; };
+		D5DBA6E92985AC5A000C891F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA6E82985AC5A000C891F /* HomeView.swift */; };
+		D5DBA6EB2985AC5C000C891F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DBA6EA2985AC5C000C891F /* Assets.xcassets */; };
+		D5DBA6EE2985AC5C000C891F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DBA6ED2985AC5C000C891F /* Preview Assets.xcassets */; };
+		D5DBA6F02985AC5C000C891F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA6EF2985AC5C000C891F /* Persistence.swift */; };
+		D5DBA6F32985AC5C000C891F /* Trialler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA6F12985AC5C000C891F /* Trialler.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D5DBA6E32985AC5A000C891F /* Trialler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trialler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5DBA6E62985AC5A000C891F /* TriallerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriallerApp.swift; sourceTree = "<group>"; };
+		D5DBA6E82985AC5A000C891F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D5DBA6EA2985AC5C000C891F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5DBA6ED2985AC5C000C891F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D5DBA6EF2985AC5C000C891F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D5DBA6F22985AC5C000C891F /* Trialler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trialler.xcdatamodel; sourceTree = "<group>"; };
+		D5DBA6F42985AC5C000C891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5DBA6E02985AC5A000C891F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5DBA6DA2985AC5A000C891F = {
+			isa = PBXGroup;
+			children = (
+				D5DBA6E52985AC5A000C891F /* Trialler */,
+				D5DBA6E42985AC5A000C891F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5DBA6E42985AC5A000C891F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5DBA6E32985AC5A000C891F /* Trialler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5DBA6E52985AC5A000C891F /* Trialler */ = {
+			isa = PBXGroup;
+			children = (
+				D5DBA6E62985AC5A000C891F /* TriallerApp.swift */,
+				D5DBA6E82985AC5A000C891F /* HomeView.swift */,
+				D5DBA6EA2985AC5C000C891F /* Assets.xcassets */,
+				D5DBA6EF2985AC5C000C891F /* Persistence.swift */,
+				D5DBA6F42985AC5C000C891F /* Info.plist */,
+				D5DBA6F12985AC5C000C891F /* Trialler.xcdatamodeld */,
+				D5DBA6EC2985AC5C000C891F /* Preview Content */,
+			);
+			path = Trialler;
+			sourceTree = "<group>";
+		};
+		D5DBA6EC2985AC5C000C891F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D5DBA6ED2985AC5C000C891F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5DBA6E22985AC5A000C891F /* Trialler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5DBA6F72985AC5C000C891F /* Build configuration list for PBXNativeTarget "Trialler" */;
+			buildPhases = (
+				D5DBA6DF2985AC5A000C891F /* Sources */,
+				D5DBA6E02985AC5A000C891F /* Frameworks */,
+				D5DBA6E12985AC5A000C891F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trialler;
+			productName = Trialler;
+			productReference = D5DBA6E32985AC5A000C891F /* Trialler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5DBA6DB2985AC5A000C891F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D5DBA6E22985AC5A000C891F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D5DBA6DE2985AC5A000C891F /* Build configuration list for PBXProject "Trialler" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5DBA6DA2985AC5A000C891F;
+			productRefGroup = D5DBA6E42985AC5A000C891F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5DBA6E22985AC5A000C891F /* Trialler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5DBA6E12985AC5A000C891F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DBA6EE2985AC5C000C891F /* Preview Assets.xcassets in Resources */,
+				D5DBA6EB2985AC5C000C891F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5DBA6DF2985AC5A000C891F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DBA6F32985AC5C000C891F /* Trialler.xcdatamodeld in Sources */,
+				D5DBA6F02985AC5C000C891F /* Persistence.swift in Sources */,
+				D5DBA6E92985AC5A000C891F /* HomeView.swift in Sources */,
+				D5DBA6E72985AC5A000C891F /* TriallerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D5DBA6F52985AC5C000C891F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5DBA6F62985AC5C000C891F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5DBA6F82985AC5C000C891F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trialler/Preview Content\"";
+				DEVELOPMENT_TEAM = C799AMZVK8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Trialler/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = conlaghfinnegan.Trialler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5DBA6F92985AC5C000C891F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trialler/Preview Content\"";
+				DEVELOPMENT_TEAM = C799AMZVK8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Trialler/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = conlaghfinnegan.Trialler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5DBA6DE2985AC5A000C891F /* Build configuration list for PBXProject "Trialler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5DBA6F52985AC5C000C891F /* Debug */,
+				D5DBA6F62985AC5C000C891F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5DBA6F72985AC5C000C891F /* Build configuration list for PBXNativeTarget "Trialler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5DBA6F82985AC5C000C891F /* Debug */,
+				D5DBA6F92985AC5C000C891F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D5DBA6F12985AC5C000C891F /* Trialler.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D5DBA6F22985AC5C000C891F /* Trialler.xcdatamodel */,
+			);
+			currentVersion = D5DBA6F22985AC5C000C891F /* Trialler.xcdatamodel */;
+			path = Trialler.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D5DBA6DB2985AC5A000C891F /* Project object */;
+}
