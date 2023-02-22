@@ -7,23 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D509E094299303C400ACDE82 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D509E093299303C400ACDE82 /* User.swift */; };
+		D509E0962993043F00ACDE82 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D509E0952993043F00ACDE82 /* WelcomeView.swift */; };
+		D559034E298A0601007C7376 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D559034D298A0601007C7376 /* HomeViewModel.swift */; };
+		D5590350298A064F007C7376 /* Trial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D559034F298A064F007C7376 /* Trial.swift */; };
+		D566EC0E299652A200F4A9DD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566EC0D299652A200F4A9DD /* Config.swift */; };
+		D566EC122996531300F4A9DD /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566EC112996531300F4A9DD /* WelcomeViewModel.swift */; };
+		D566EC142996613200F4A9DD /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566EC132996613200F4A9DD /* Account.swift */; };
+		D585EF92299D222E00173A4C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D585EF91299D222E00173A4C /* AccountView.swift */; };
+		D589A5A929A3A54E00621AB5 /* BackBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D589A5A829A3A54E00621AB5 /* BackBoxView.swift */; };
+		D589A5AC29A3F5CB00621AB5 /* TrialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D589A5AB29A3F5CB00621AB5 /* TrialsView.swift */; };
+		D589A5B029A5402D00621AB5 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D589A5AF29A5402D00621AB5 /* AccountViewModel.swift */; };
+		D5BEEF182992AEC8000CFEDC /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEEF172992AEC8000CFEDC /* Images.swift */; };
+		D5CD29702985B57D00DB5C35 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CD296F2985B57D00DB5C35 /* Colors.swift */; };
+		D5CD29722985B93200DB5C35 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CD29712985B93200DB5C35 /* Strings.swift */; };
+		D5CD298C2985BD9500DB5C35 /* ARIALROUNDEDMTLIGHT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D5CD29782985BD9300DB5C35 /* ARIALROUNDEDMTLIGHT.TTF */; };
+		D5CD298F2985BD9500DB5C35 /* ARLRDBD.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D5CD297B2985BD9400DB5C35 /* ARLRDBD.TTF */; };
+		D5CD29982985BD9500DB5C35 /* ARIALROUNDEDMTEXTRABOLD.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D5CD29842985BD9500DB5C35 /* ARIALROUNDEDMTEXTRABOLD.TTF */; };
+		D5CD299C2985BD9500DB5C35 /* ARIALROUNDEDMT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D5CD29882985BD9500DB5C35 /* ARIALROUNDEDMT.TTF */; };
+		D5CD29A02985BEBD00DB5C35 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CD299F2985BEBD00DB5C35 /* Fonts.swift */; };
 		D5DBA6E72985AC5A000C891F /* TriallerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA6E62985AC5A000C891F /* TriallerApp.swift */; };
 		D5DBA6E92985AC5A000C891F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA6E82985AC5A000C891F /* HomeView.swift */; };
 		D5DBA6EB2985AC5C000C891F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DBA6EA2985AC5C000C891F /* Assets.xcassets */; };
 		D5DBA6EE2985AC5C000C891F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DBA6ED2985AC5C000C891F /* Preview Assets.xcassets */; };
-		D5DBA6F02985AC5C000C891F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA6EF2985AC5C000C891F /* Persistence.swift */; };
-		D5DBA6F32985AC5C000C891F /* Trialler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5DBA6F12985AC5C000C891F /* Trialler.xcdatamodeld */; };
+		D5DE582629944973005E1179 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DE582529944973005E1179 /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D509E093299303C400ACDE82 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D509E0952993043F00ACDE82 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		D559034D298A0601007C7376 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D559034F298A064F007C7376 /* Trial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trial.swift; sourceTree = "<group>"; };
+		D566EC0D299652A200F4A9DD /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D566EC112996531300F4A9DD /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		D566EC132996613200F4A9DD /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		D585EF91299D222E00173A4C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		D589A5A829A3A54E00621AB5 /* BackBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackBoxView.swift; sourceTree = "<group>"; };
+		D589A5AB29A3F5CB00621AB5 /* TrialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialsView.swift; sourceTree = "<group>"; };
+		D589A5AF29A5402D00621AB5 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		D5BEEF172992AEC8000CFEDC /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		D5BEEF192992F57A000CFEDC /* Trialler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trialler.entitlements; sourceTree = "<group>"; };
+		D5CD296F2985B57D00DB5C35 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D5CD29712985B93200DB5C35 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		D5CD29782985BD9300DB5C35 /* ARIALROUNDEDMTLIGHT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARIALROUNDEDMTLIGHT.TTF; sourceTree = "<group>"; };
+		D5CD297B2985BD9400DB5C35 /* ARLRDBD.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARLRDBD.TTF; sourceTree = "<group>"; };
+		D5CD29842985BD9500DB5C35 /* ARIALROUNDEDMTEXTRABOLD.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARIALROUNDEDMTEXTRABOLD.TTF; sourceTree = "<group>"; };
+		D5CD29882985BD9500DB5C35 /* ARIALROUNDEDMT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARIALROUNDEDMT.TTF; sourceTree = "<group>"; };
+		D5CD299F2985BEBD00DB5C35 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		D5DBA6E32985AC5A000C891F /* Trialler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trialler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DBA6E62985AC5A000C891F /* TriallerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriallerApp.swift; sourceTree = "<group>"; };
 		D5DBA6E82985AC5A000C891F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D5DBA6EA2985AC5C000C891F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5DBA6ED2985AC5C000C891F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D5DBA6EF2985AC5C000C891F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		D5DBA6F22985AC5C000C891F /* Trialler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trialler.xcdatamodel; sourceTree = "<group>"; };
 		D5DBA6F42985AC5C000C891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5DE582529944973005E1179 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +74,112 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D509E097299304F000ACDE82 /* Representables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Representables;
+			sourceTree = "<group>";
+		};
+		D566EC0F299652F600F4A9DD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D5DBA6E82985AC5A000C891F /* HomeView.swift */,
+				D559034D298A0601007C7376 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D566EC10299652FF00F4A9DD /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				D509E0952993043F00ACDE82 /* WelcomeView.swift */,
+				D566EC112996531300F4A9DD /* WelcomeViewModel.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		D585EF90299D21A600173A4C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				D585EF91299D222E00173A4C /* AccountView.swift */,
+				D589A5AF29A5402D00621AB5 /* AccountViewModel.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		D589A5A729A3A53C00621AB5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D589A5A829A3A54E00621AB5 /* BackBoxView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D589A5AA29A3F5C100621AB5 /* Trials */ = {
+			isa = PBXGroup;
+			children = (
+				D589A5AB29A3F5CB00621AB5 /* TrialsView.swift */,
+			);
+			path = Trials;
+			sourceTree = "<group>";
+		};
+		D5CD296E2985B56E00DB5C35 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D5CD29762985BD7300DB5C35 /* Font Files */,
+				D5DBA6EA2985AC5C000C891F /* Assets.xcassets */,
+				D5CD29712985B93200DB5C35 /* Strings.swift */,
+				D5CD296F2985B57D00DB5C35 /* Colors.swift */,
+				D5CD299F2985BEBD00DB5C35 /* Fonts.swift */,
+				D5BEEF172992AEC8000CFEDC /* Images.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		D5CD29732985BA8800DB5C35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D559034F298A064F007C7376 /* Trial.swift */,
+				D509E093299303C400ACDE82 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D5CD29742985BA9A00DB5C35 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5DE582529944973005E1179 /* RootView.swift */,
+				D589A5AA29A3F5C100621AB5 /* Trials */,
+				D589A5A729A3A53C00621AB5 /* Shared */,
+				D585EF90299D21A600173A4C /* Account */,
+				D566EC10299652FF00F4A9DD /* Welcome */,
+				D566EC0F299652F600F4A9DD /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5CD29752985BAA300DB5C35 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D5DBA6E62985AC5A000C891F /* TriallerApp.swift */,
+				D566EC0D299652A200F4A9DD /* Config.swift */,
+				D566EC132996613200F4A9DD /* Account.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D5CD29762985BD7300DB5C35 /* Font Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5CD29882985BD9500DB5C35 /* ARIALROUNDEDMT.TTF */,
+				D5CD29842985BD9500DB5C35 /* ARIALROUNDEDMTEXTRABOLD.TTF */,
+				D5CD29782985BD9300DB5C35 /* ARIALROUNDEDMTLIGHT.TTF */,
+				D5CD297B2985BD9400DB5C35 /* ARLRDBD.TTF */,
+			);
+			path = "Font Files";
+			sourceTree = "<group>";
+		};
 		D5DBA6DA2985AC5A000C891F = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +199,13 @@
 		D5DBA6E52985AC5A000C891F /* Trialler */ = {
 			isa = PBXGroup;
 			children = (
-				D5DBA6E62985AC5A000C891F /* TriallerApp.swift */,
-				D5DBA6E82985AC5A000C891F /* HomeView.swift */,
-				D5DBA6EA2985AC5C000C891F /* Assets.xcassets */,
-				D5DBA6EF2985AC5C000C891F /* Persistence.swift */,
+				D509E097299304F000ACDE82 /* Representables */,
+				D5BEEF192992F57A000CFEDC /* Trialler.entitlements */,
+				D5CD29752985BAA300DB5C35 /* App */,
+				D5CD29742985BA9A00DB5C35 /* Views */,
+				D5CD29732985BA8800DB5C35 /* Models */,
+				D5CD296E2985B56E00DB5C35 /* Assets */,
 				D5DBA6F42985AC5C000C891F /* Info.plist */,
-				D5DBA6F12985AC5C000C891F /* Trialler.xcdatamodeld */,
 				D5DBA6EC2985AC5C000C891F /* Preview Content */,
 			);
 			path = Trialler;
@@ -134,6 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5DBA6EE2985AC5C000C891F /* Preview Assets.xcassets in Resources */,
+				D5CD299C2985BD9500DB5C35 /* ARIALROUNDEDMT.TTF in Resources */,
+				D5CD29982985BD9500DB5C35 /* ARIALROUNDEDMTEXTRABOLD.TTF in Resources */,
+				D5CD298F2985BD9500DB5C35 /* ARLRDBD.TTF in Resources */,
+				D5CD298C2985BD9500DB5C35 /* ARIALROUNDEDMTLIGHT.TTF in Resources */,
 				D5DBA6EB2985AC5C000C891F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,10 +293,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5DBA6F32985AC5C000C891F /* Trialler.xcdatamodeld in Sources */,
-				D5DBA6F02985AC5C000C891F /* Persistence.swift in Sources */,
+				D5CD29A02985BEBD00DB5C35 /* Fonts.swift in Sources */,
+				D589A5A929A3A54E00621AB5 /* BackBoxView.swift in Sources */,
+				D5CD29702985B57D00DB5C35 /* Colors.swift in Sources */,
+				D559034E298A0601007C7376 /* HomeViewModel.swift in Sources */,
+				D589A5B029A5402D00621AB5 /* AccountViewModel.swift in Sources */,
+				D5590350298A064F007C7376 /* Trial.swift in Sources */,
+				D566EC142996613200F4A9DD /* Account.swift in Sources */,
+				D566EC122996531300F4A9DD /* WelcomeViewModel.swift in Sources */,
+				D509E0962993043F00ACDE82 /* WelcomeView.swift in Sources */,
 				D5DBA6E92985AC5A000C891F /* HomeView.swift in Sources */,
+				D5BEEF182992AEC8000CFEDC /* Images.swift in Sources */,
+				D585EF92299D222E00173A4C /* AccountView.swift in Sources */,
+				D5DE582629944973005E1179 /* RootView.swift in Sources */,
+				D5CD29722985B93200DB5C35 /* Strings.swift in Sources */,
+				D566EC0E299652A200F4A9DD /* Config.swift in Sources */,
+				D589A5AC29A3F5CB00621AB5 /* TrialsView.swift in Sources */,
 				D5DBA6E72985AC5A000C891F /* TriallerApp.swift in Sources */,
+				D509E094299303C400ACDE82 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -259,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -274,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Trialler/Trialler.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Trialler/Preview Content\"";
@@ -281,16 +444,18 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Trialler/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "FaceID helps you to log into Trialler without having to enter your passcode.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = conlaghfinnegan.Trialler;
+				PRODUCT_BUNDLE_IDENTIFIER = conlaghfinnegan.TrialleriOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -303,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Trialler/Trialler.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Trialler/Preview Content\"";
@@ -310,16 +476,18 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Trialler/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "FaceID helps you to log into Trialler without having to enter your passcode.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = conlaghfinnegan.Trialler;
+				PRODUCT_BUNDLE_IDENTIFIER = conlaghfinnegan.TrialleriOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -349,19 +517,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		D5DBA6F12985AC5C000C891F /* Trialler.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D5DBA6F22985AC5C000C891F /* Trialler.xcdatamodel */,
-			);
-			currentVersion = D5DBA6F22985AC5C000C891F /* Trialler.xcdatamodel */;
-			path = Trialler.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = D5DBA6DB2985AC5A000C891F /* Project object */;
 }

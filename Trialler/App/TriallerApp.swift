@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct TriallerApp: App {
-    let persistenceController = PersistenceController.shared
-
+    
+    var viewShown: ViewName = .welcome
+    
     var body: some Scene {
         WindowGroup {
-            HomeView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            RootView(viewShown: viewShown)
         }
     }
 }
