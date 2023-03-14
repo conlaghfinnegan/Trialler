@@ -11,7 +11,6 @@ struct BackBoxView: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 10)
             .foregroundColor(Colors.backBox.color)
-//            .shadow(color: Colors.shadow.color, radius: 2)
     }
 }
 

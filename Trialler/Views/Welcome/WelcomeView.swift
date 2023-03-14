@@ -45,7 +45,7 @@ struct WelcomeView: View {
                         print("Error loggin in! - \(error.localizedDescription)")
                     }
                     if Account.shared.isLoggedIn {
-                        rootView?.viewShown = .home
+                        rootView?.changeView(to: .home)
                     }
                 }
             }
@@ -103,7 +103,6 @@ private struct SignInButton: View {
                 case .success(let authResults):
                     switch authResults.credential {
                     case let appleIDCredential as ASAuthorizationAppleIDCredential:
-                        let userID = appleIDCredential.user
                         if let forename = appleIDCredential.fullName?.givenName,
                            let surname = appleIDCredential.fullName?.familyName,
                            let emailAddress = appleIDCredential.email {
@@ -111,15 +110,13 @@ private struct SignInButton: View {
                             Task {
                                 do {
                                     try await Account.shared.registerAndLogin(user: User(emailAddress: emailAddress,
-                                                                               forename: forename,
-                                                                               surname: surname))
-                                    DispatchQueue.main.async {
+                                                                                         forename: forename,
+                                                                                         surname: surname))
                                         if Account.shared.isLoggedIn {
-                                            rootView?.viewShown = .home
+                                            await rootView?.changeView(to: .home)
                                         }
-                                    }
+                                    
                                 } catch let error {
-                                    //TODO: Present error
                                     print("Error loggin in! - \(error.localizedDescription)")
                                 }
                                 
@@ -130,16 +127,26 @@ private struct SignInButton: View {
                             Task {
                                 do {
                                     try await Account.shared.login()
-                                    DispatchQueue.main.async {
                                         if Account.shared.isLoggedIn {
-                                            rootView?.viewShown = .home
+                                            await rootView?.changeView(to: .home)
                                         }
-                                    }
+                                    
                                 } catch let error {
                                     //TODO: Present error
                                     print("Error loggin in! - \(error.localizedDescription)")
+                                    if let ckError = error as? CKError {
+                                        switch ckError.code {
+                                        case .unknownItem:
+                                            //Print - This is just a new user, or a user who has re-installed.
+                                            //Let them continue to input their info manually.
+                                            print("Manual entry")
+                                            await rootView?.changeView(to: .userDetailView)
+                                        default:
+                                            //TODO: Present error
+                                            print("Unknown error")
+                                        }
+                                    }
                                 }
-                                
                             }
                         }
                     default:

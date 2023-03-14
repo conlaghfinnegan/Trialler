@@ -9,7 +9,16 @@ import SwiftUI
 
 struct TrialsView: View {
     var body: some View {
-        Text("Hello, Trials!")
+        ZStack {
+            BackgroundView()
+        }
+    }
+    
+    private struct BackgroundView: View {
+        var body: some View {
+            Colors.background.color
+            .ignoresSafeArea()
+        }
     }
 }
 

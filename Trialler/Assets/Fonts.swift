@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 public enum FontSize: CGFloat {
+    case extraLargeTitle = 30
+    case largeTitle = 22
     case title = 18
     case subtitle = 16
     case heading = 14

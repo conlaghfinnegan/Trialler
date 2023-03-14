@@ -18,11 +18,9 @@ struct AccountView: View {
             ZStack {
                 BackgroundView()
                 VStack {
-                    SettingsAvatarView()
                     ZStack {
                         BackBoxView()
                         VStack {
-                            
                             SettingsListView()
                         }
                     }
@@ -31,7 +29,7 @@ struct AccountView: View {
                     Spacer()
                 }
             }
-            .navigationBarTitle("Account", displayMode: .inline)
+            .navigationBarTitle(Strings.accountNavBarTitle.rawValue, displayMode: .inline)
         }
         
     }
@@ -39,14 +37,13 @@ struct AccountView: View {
     private struct SettingsAvatarView: View {
         var body: some View {
             VStack {
-                Image(systemName: "person.circle")
+                Image(systemName: Images.accountDefaultImage.rawValue)
                     .resizable()
-                    .frame(width: 50, height: 50)
+                    .frame(width: 40, height: 40)
                     .foregroundColor(.white)
                     .padding([.leading, .trailing])
-                    .padding([.top], 20)
-                Text(Account.shared.loggedInUser?.fullName ?? "Your account")
-                    .font(Fonts.bold.font(FontSize.title.rawValue))
+                Text(Account.shared.loggedInUser?.fullName ?? Strings.accountDefaultName.rawValue)
+                    .font(Fonts.bold.font(FontSize.heading.rawValue))
                     .foregroundColor(Colors.text.color)
             }
         }
@@ -78,36 +75,41 @@ struct AccountView: View {
     private struct BackgroundView: View {
         var body: some View {
             Colors.background.color
-            .ignoresSafeArea(edges: [.leading, .trailing, .bottom])        }
+            .ignoresSafeArea(edges: [.leading, .trailing, .bottom])
+        }
     }
     
     struct MenuItemAccountListItem: View {
         var body: some View {
-            VStack(spacing: 15) {
-                HStack {
-                    Image(systemName: "rectangle.portrait.and.arrow.forward.fill")
-                        .foregroundColor(.white)
-                    Text("Sign out")
-                        .foregroundColor(.white)
-                        .font(Fonts.regular.font(FontSize.subtitle.rawValue))
-                        .onTapGesture {
-                            Task {
-                                do {
-                                    try await Account.shared.logout()
-                                } catch {
-                                    //TODO: Handle error
-                                }
+            HStack {
+                SettingsAvatarView()
+                VStack(spacing: 15) {
+                    HStack {
+                        Spacer()
+                        Text(Strings.accountCtaUpdateInfo.rawValue)
+                            .foregroundColor(.white)
+                            .font(Fonts.regular.font(FontSize.body.rawValue))
+                        Image(systemName: Images.accountUpdateInfo.rawValue)
+                            .foregroundColor(.white)
+                    }
+                    HStack {
+                        Spacer()
+                        
+                        Text(Strings.accountCtaDeleteAccount.rawValue)
+                            .foregroundColor(.white)
+                            .font(Fonts.regular.font(FontSize.body.rawValue))
+                        Image(systemName: Images.accountDeleteAccount.rawValue)
+                            .foregroundColor(.white)
+                    }
+                    .onTapGesture {
+                        Task {
+                            do {
+                                try await Account.shared.logout()
+                            } catch {
+                                //TODO: Handle error
                             }
                         }
-                    Spacer()
-                }
-                HStack {
-                    Image(systemName: "exclamationmark.icloud.fill")
-                        .foregroundColor(.white)
-                    Text("Delete account")
-                        .foregroundColor(.white)
-                        .font(Fonts.regular.font(FontSize.subtitle.rawValue))
-                    Spacer()
+                    }
                 }
             }
         }

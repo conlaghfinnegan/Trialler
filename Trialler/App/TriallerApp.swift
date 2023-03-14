@@ -10,11 +10,11 @@ import SwiftUI
 @main
 struct TriallerApp: App {
     
-    var viewShown: ViewName = .welcome
+    let rootView = RootView()
     
     var body: some Scene {
         WindowGroup {
-            RootView(viewShown: viewShown)
+            rootView.environmentObject(RootView.ViewModel())
         }
     }
 }

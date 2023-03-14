@@ -8,51 +8,72 @@
 import SwiftUI
 
 public enum ViewName {
+    case loading
     case welcome
     case home
+    case userDetailView
 }
 
 struct RootView: View {
     
-    @ObservedObject var account = Account.shared
-    
-//    @State var isLoggedIn = Account.shared.isLoggedIn {
-//        didSet {
-//            print("Subscriber received \(isLoggedIn)")
-//        }
-//    }
-    
-    @State var viewShown: ViewName
-    
+    @EnvironmentObject var viewModel: ViewModel
+        
     var body: some View {
-        if !account.isLoggedIn {
+        ZStack {
+            viewFor(viewModel.viewShown)
+        }
+        .preferredColorScheme(.dark)
+    }
+    
+    @ViewBuilder func viewFor(_ viewName: ViewName) -> some View {
+        switch viewModel.viewShown {
+        case .loading:
+            loadingView()
+                .opacity(viewModel.opacity)
+                .animation(.easeInOut(duration: 0.5), value: viewModel.opacity)
+        case .welcome:
             WelcomeView(rootView: self)
-                .preferredColorScheme(.dark)
-        } else {
-            switch viewShown {
-            case .welcome:
-                WelcomeView(rootView: self)
-                    .preferredColorScheme(.dark)
-            case .home:
-                TabView {
-                    HomeView(rootView: self).environmentObject(HomeView.ViewModel())
-                        .tabItem {
-                            Label("Home", systemImage: "house.fill")
-                        }
-                    TrialsView()
-                        .tabItem {
-                            Label("Trials", systemImage: "clock.fill")
-                        }
-                }
-                .preferredColorScheme(.dark)
-                .accentColor(.white)
+        case .userDetailView:
+            DetailsView().environmentObject(DetailsView.ViewModel(rootView: self))
+        case .home:
+            TabView {
+                HomeView(rootView: self).environmentObject(HomeView.ViewModel())
+                    .tabItem {
+                        Label(Strings.tabBarLabelHome.rawValue,
+                              systemImage: Images.tabBarIconHome.rawValue)
+                    }
+                TrialsView()
+                    .tabItem {
+                        Label(Strings.tabBarLabelTrials.rawValue,
+                              systemImage: Images.tabBarIconTrials.rawValue)
+                    }
             }
+            .accentColor(.white)
         }
     }
-}
-
-struct RootView_Previews: PreviewProvider {
-    static var previews: some View {
-        RootView(viewShown: .home)
+    
+    
+    public func changeView(to view: ViewName) {
+        DispatchQueue.main.async {
+            viewModel.viewShown = view
+        }
+    }
+    
+    private struct BackgroundView: View {
+        var body: some View {
+            Colors.background.color
+                .ignoresSafeArea()
+        }
+    }
+    
+    private struct loadingView: View {
+        var body: some View {
+            ZStack {
+                BackgroundView()
+                Text("Loading")
+                    .font(Fonts.bold.font(FontSize.subtitle.rawValue))
+                    .foregroundColor(Colors.text.color)
+            }
+        }
     }
 }

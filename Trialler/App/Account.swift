@@ -25,6 +25,8 @@ class Account: ObservableObject {
         loggedInUser != nil
     }
     
+    public var userPublisher: Published<User?>.Publisher?
+    
     private let container = CKContainer(identifier: Config.ckContainerID)
     
     private lazy var database = container.privateCloudDatabase
@@ -38,6 +40,7 @@ class Account: ObservableObject {
         Task {
             try? await self.fetchUser()
         }
+        userPublisher = $loggedInUser
     }
     
     //MARK: Public Functions

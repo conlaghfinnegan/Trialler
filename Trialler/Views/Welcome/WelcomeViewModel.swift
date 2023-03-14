@@ -12,6 +12,5 @@ extension WelcomeView {
     class ViewModel: ObservableObject {
         
         @Published var loggedInUser: User?
-        
     }
 }
